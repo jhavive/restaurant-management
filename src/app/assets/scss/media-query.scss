@@ -1,0 +1,85 @@
+// ----------------------------------------------------------------------
+
+// Mobile Media Query
+
+// ----------------------------------------------------------------------
+
+// example: @include mobile {font-size: 18px;}
+
+$smallMobileWidth: 360;
+$mobileWidth: 980;
+$desktopWidth: 1441;
+$smallDesktopWidth: 1440;
+
+@mixin small_portrait {
+  @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin medium_portrait {
+  @media (min-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin large_portrait {
+  @media (min-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin xl_portrait {
+  @media (min-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin small_landscape {
+  @media (min-width: 600px) and (max-width: 767px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin medium_landscape {
+  @media (min-width: 768px) and (max-width: 1367px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin large_landscape {
+  @media (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin xl_landscape {
+  
+}
+
+
+
+@mixin small {
+  // this should always come after @include mobile()
+  @media (max-width: $smallMobileWidth+px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobileWidth+px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktopWidth+px) {
+    @content;
+  }
+}
+
+@mixin smallDesktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

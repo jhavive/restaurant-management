@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/global.scss';
+
+$marginTop: 100px;
+$RightSidebarWidth: 70px;
+
+.home-container {
+    .navbar-component.root{
+        @include small_portrait{
+            
+        }
+    }
+    .sidebar-container{
+    
+    }
+    .sidebar-container.root{
+        // @include small_portrait{
+            display: none;
+        // }
+    }
+    .body {
+        box-sizing: border-box;
+        position: fixed;
+        bottom:0;
+        width: 100vw;
+        left: 20px;
+        z-index:0;
+        top: $navbarHeight;
+    }
+}

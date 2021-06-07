@@ -1,0 +1,29 @@
+.table-page-container{
+    height: 100vh;
+    width: calc(100vw -200px);
+    position: relative;
+    .button-row{
+        position: absolute;
+        left:20px;
+        top: 20px;
+        .custom-button{
+            margin: 5px;
+            font-size: 15px;
+        }
+    }
+    .table-list{    
+        display: flex;
+        justify-content: flex-start;
+        position: absolute;
+        width: 98%;
+        flex-wrap: wrap;
+        padding: 0 40px 0px 0px;
+        top: 100px;
+        height: calc(100vh - 250px);
+        overflow: auto;
+        .card-container{
+            width: 200px;
+            font-size: 32px;
+        }
+    }
+}

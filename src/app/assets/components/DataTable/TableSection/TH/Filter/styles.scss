@@ -1,0 +1,11 @@
+@import '../../../../../scss/global.scss';
+
+.filter-container {
+    text-align: left;
+    input {
+        border: none;
+        border-bottom: 1px solid #e8e8e8;
+        font-size: 10px;
+        margin: 0px;
+    }
+}

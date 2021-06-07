@@ -1,0 +1,121 @@
+@import '../../../../../assets/scss/global.scss';
+
+.sidebar-container {
+    position: fixed;
+    min-width: 100vw;
+    background-color: white;
+    font-size: 15px;
+    height: 100px;
+    text-align: center;
+    z-index: -1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.21);
+    .navbar-wrapper{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+
+    .header-logo{
+        padding: 32px 30px;
+        svg{
+            // transform: rotate(-90deg);
+            transform: scaleX(-1) rotate(-90deg);
+        }
+        .logo{
+            margin-left: 0px;
+            height: 71px;
+        }
+    }
+
+    .sidebar-content{
+        .sub-routes-hidden > div{
+            display: none;
+        }
+        height: 100px;
+        display: flex;
+        align-items: center;
+        .nav-link{
+            font-weight: 100;
+            color: $grey1;
+            text-align: left;
+            margin: 0px;;
+            padding: 43px 30px;
+            height: 100%;
+            cursor: pointer;
+            .icon{
+                .address-book{
+                    width: 24px;
+                    height: 24px;
+                    stroke-width: 0.5px;
+                    font-weight: 100;
+                }
+                svg{
+                    stroke-width: 0.5px;
+                }
+                margin-right: 30px;
+                vertical-align: -webkit-baseline-middle;
+                vertical-align: middle;
+                vertical-align: -moz-middle-with-baseline;
+            }
+            .sub-routes{
+                display: none;
+            }
+        }
+        .nav-link.active-route{
+            font-weight: bold;
+            border-bottom: 3px solid $prime-blue;
+            color: $prime-blue;
+            > span > svg{
+                stroke-width: 1px;
+            }
+            .sub-routes {
+                display: block;
+                margin-top: 15px;
+                padding-left: 20px;
+                .nav-sub-link{
+                    color: $grey1;
+                    margin-bottom: 15px;
+                    font-size: 13px;
+                    .icon{
+                        margin-right: 20px;
+                    }
+                }
+                .nav-sub-link-active{
+                    color: white;
+                    margin-bottom: 15px;
+                    svg{
+                        stroke-width: 1px;
+                    }
+                    .icon{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .footer{
+            position: absolute;
+            bottom: 0px;
+            // border-top: 1px solid rgba(137, 137, 137, 0.3);
+            width: 100%;
+            margin: auto;
+            left: 0px;
+            svg{
+                rect{
+    
+                    &:nth-child(2) {
+                        stroke-width: 2px;
+                        fill: $grey1;
+                    }
+                }
+            }
+            .nav-link{
+                border-top: 1px solid rgba(137, 137, 137, 0.3);
+                box-sizing: border-box;
+            }
+              
+        }
+    }
+
+
+    
+}

@@ -1,0 +1,20 @@
+.order-container{
+    padding: 40px;
+    .button-row{
+        margin-top: 20px;
+        
+    }
+    .item-row{
+        p{
+            width: 50px;
+            text-align: left;
+        }
+    }
+    .primary{
+        width: 50%;
+        margin: 30px auto 0px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

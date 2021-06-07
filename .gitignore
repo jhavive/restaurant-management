@@ -1,0 +1,11 @@
+node_modules/
+.idea/
+dist/
+build/
+public/
+.history
+.DS_Store
+.idea/
+*/.DS_Store
+
+src/app/config.js

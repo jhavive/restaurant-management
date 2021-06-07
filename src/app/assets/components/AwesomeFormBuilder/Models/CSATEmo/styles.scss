@@ -1,0 +1,46 @@
+@import '../../../../scss/global.scss';
+
+.csat-emo-builder-view-active, .csat-emo-builder-view{
+    position: relative;
+    padding: 20px;
+    .emo-row{    
+        width: 90%;
+        .icon{
+            text-align: center;
+            // margin-right: 5px;
+            font-size: 12px;
+        }
+    }
+    .cirlce{
+        width: 15px;
+        height: 15px;
+        border: 0.5px solid $grey1;
+        background: white;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .cirlce.active{
+        border: 0.5px solid $prime-blue;;
+        background: $prime-blue;
+    }
+}
+
+.csat-emo-builder-view{
+    .close{
+        display: none;
+    }
+    &:hover{
+        background-color: #c4c4c420;
+        cursor: pointer;
+    }
+}
+
+.csat-emo-builder-view-active{
+    background-color: $grey3;
+    .close{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

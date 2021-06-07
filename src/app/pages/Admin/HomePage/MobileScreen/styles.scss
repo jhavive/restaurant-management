@@ -1,0 +1,59 @@
+@import '../../../../assets/scss/global.scss';
+
+$marginTop: 100px;
+$RightSidebarWidth: 70px;
+
+.home-mobile-container {
+    .navbar-component.root{
+        @include small_portrait{
+            
+        }
+    }
+
+    .root-navbar{
+        text-align: center;
+        background: $prime-blue;
+        padding: 20px 0px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .mobile-navbar{
+        text-align: center;
+        background: white;
+        padding: 20px 0px;
+        // border-radius: 0px 0px 50% 50%;
+        height: $navbarHeightMobile;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 40px;
+        box-shadow: 0px 1px 10px #ececec;
+        border-bottom: 0.5px solid #ececec;
+        .menu-icon{
+            transform: rotate(-90deg);
+        }
+        z-index: 1;
+        a{
+            color: #212121;
+        }
+    }
+
+    .body {
+        box-sizing: border-box;
+        position: fixed;
+        @include small_portrait {
+            width: 100%;
+            margin-left: 0px;
+            padding: 0px 25px;
+            overflow-x: hidden;
+            top: 90px;
+            left: 0px;
+        }
+    }
+    .body.without-footer{
+        bottom:0px;
+    }
+    .body.with-footer{
+        bottom:70px;
+    }
+}

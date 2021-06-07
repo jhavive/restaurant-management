@@ -1,0 +1,93 @@
+.multi-select-view-container{
+    width: 80%;
+    .multi-select{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 46px;
+        position: relative;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 5px 10px;
+        align-items: center;
+
+        .label{
+            cursor: pointer;
+            background: #ECECEC;
+            border: 0.25px solid #898989;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 4px 5px;
+            font-size: 13px;
+            position: relative;
+            // max-width: 40%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 2.5px 5px;
+            padding-top: 5px;
+            padding-right: 35px;
+            &:after{
+                content: 'X';
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 1px;
+                color: white;
+                background-color: #212121;
+                cursor: pointer;
+                font-size: 8px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+        }
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            // margin-top: -2px;
+            right: 8px;
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #aaa;
+            transform: translateY(-50%);
+        }
+    }
+    .dropdown{
+        // visibility: hidden;
+        display: none;
+    }
+    
+    
+}
+
+.multi-select-view-container.active{
+    .dropdown{
+        display: block;
+        background: #FFFFFF;
+        box-shadow: -3px 7px 16px rgba(0, 0, 0, 0.21);
+        border-radius: 5px;
+        max-height: 200px;
+        position: relative;
+        margin-top: 5px;
+        animation: fadein 0.5s;
+        width: 100%;
+        overflow: auto;
+        p{
+            width: 80%;
+            margin: 13px;
+            padding: 5px 15px;
+            &:hover{
+                background: #ECECEC;
+                border-radius: 5px;
+                padding: 5px 15px;
+            }
+        }
+    }
+}

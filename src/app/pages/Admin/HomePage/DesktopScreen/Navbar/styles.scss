@@ -1,0 +1,52 @@
+
+@import '../../../../../assets/scss/global.scss';
+
+.navbar-component{
+    border-bottom: 1px solid $grey2;
+    position: fixed;
+    // z-index: 10;
+    top: 0px;
+    left:  $navbarwidth;
+    width: calc(100% - #{$navbarwidth} - 20px);
+    padding: 20px 0px 20px 10px;
+    margin-left: 20px;
+    background-color: white;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li{
+        list-style: none;
+    }
+    .right {
+        text-align: right;
+    }
+    .left  {
+        text-align: left;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .dropdwon-container{
+            margin:5px 10px;
+        }
+        .vertical-bar{
+            width: 1px;
+            height: 100%;
+            background-color: $grey2;
+            margin:0px 15px;
+        }
+        .circle-text{
+            margin:0px ;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $grey4;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 15px;
+        }
+    }
+}

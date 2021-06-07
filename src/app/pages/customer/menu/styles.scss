@@ -1,0 +1,94 @@
+.menu-container{
+    // background-color: #F7B32B;
+    background-color: white;
+    margin: 0px;
+    overflow: auto;
+    .card-container{
+        // background-color: #F5853F;
+        // box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.21);
+        color: #2D080A;
+        .item-row{
+            // border-bottom: 0.5px solid white;
+            margin: 30px 0px;
+            padding: 20px 0px;
+            width: 100%;
+            div:nth-child(1){
+                width: 180px;
+                // max-width: 70%;
+                word-wrap: break-word;
+                padding: 0px 15px 0px 0px;
+            }
+            div:nth-child(2){
+                // width: 70px;
+                padding: 0px;
+                padding-left: 10px;
+                text-align: left;
+            }
+            div:nth-child(3){
+                width: 50px;
+                // max-width: 70px;  
+                padding: 0px;     
+                text-align: center;       
+            }
+        }
+        .action-row{
+            svg{
+                stroke-width: 1px;
+                color: #212121;
+            }
+            div:nth-child(1){
+                margin: 0px 20px 0px 0px;
+            }
+            div:nth-child(3){
+                margin: 0px 0px 0px 20px;
+            }
+        }
+        .item-name{
+            font-size: 20px;
+            font-weight: bold;
+            color: #212121;
+        }
+        .description{
+            font-size: 11px;
+            font-weight: 100;
+            color: #2E294E;
+        }
+    }
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 10vh;
+        background: #44AF69;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.61);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4, h5{
+
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+        h4{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 16px;
+        }
+        .custom-button{
+            height: 100%;
+            width: 48%;
+            color: white;
+            border-color: white;
+        }
+        .custom-button.disabled{
+            // color: #393D3F;
+            background-color: transparent;
+            border-color: #393D3F;
+            cursor: unset;
+        }
+    }
+}

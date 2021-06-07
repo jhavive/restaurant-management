@@ -1,0 +1,77 @@
+@import '../../scss/global.scss';
+
+.tabs-container{
+    position: relative;
+    // height: calc(100vh - 180px);
+    height: 100%;
+    overflow: auto;
+    .header-container{
+        // display: flex;
+        justify-content: center;
+        height: 40px;
+        max-width: 85%;
+        @include small_portrait{
+            margin: auto;
+            // max-width: 100%;
+        }
+        .tabs-header{
+            display: flex;
+            max-width: 100%;
+            .tab-box{
+                padding: 10px 20px;
+                background: white;
+                border-bottom: 0.5px solid $grey5;
+                cursor: pointer;
+                height: 100%;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                font-size: 15px;
+                color: #212121; 
+            }
+            .tab-box.active{
+                padding: 10px 20px 5px;
+                box-sizing: border-box;
+                border-bottom: 4px solid $prime-blue;
+                color: $prime-blue;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .tabs-body{
+        width: 100%;
+        position: relative;
+        height: calc(100vh - 210px);
+        .table-header{
+            .right{
+                position: absolute;
+                right: 0px;
+                top: -45px;
+                .custom-button{
+                    // width: 100px;
+                    height: 40px;
+                    left: 991px;
+                    top: 109px;
+                    color: #1749A5;
+                    background-color: white;
+                    padding: 8px 15px;
+                    border: 1px solid #1749A5;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    margin-right: 20px;
+                }
+            }
+            .left{
+                position: fixed;
+                bottom: 0px;
+                right: 80px;
+                @include smallDesktop{
+                    right: 10px
+                }
+            }
+        }
+    }
+}

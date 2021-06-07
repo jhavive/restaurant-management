@@ -1,0 +1,28 @@
+@keyframes rotationup{
+  from { transform: rotateX(0deg); }
+  to   { transform: rotateX(90deg); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes rotationup {
+  from { transform: rotateX(0deg); }
+  to   { transform: rotateX(90deg); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes rotationup {
+  from { transform: rotateX(0deg); }
+  to   { transform: rotateX(90deg); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes rotationup {
+  from { transform: rotateX(0deg); }
+  to   { transform: rotateX(90deg); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes rotationup {
+  from { transform: rotateX(0deg); }
+  to   { transform: rotateX(90deg); }
+}

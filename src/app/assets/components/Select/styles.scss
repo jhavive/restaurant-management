@@ -1,0 +1,53 @@
+@import '../../scss/global.scss';
+
+
+.select-container {
+    width: 300px;
+    position: relative;
+    &:after {
+        content: '>';
+        font-size: 20px;
+        color: #666;
+        width: 30px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: -8px;
+        top: 10px;
+        padding: 26px 0 5px;
+        border-bottom: 1px solid #ddd;
+        position: absolute;
+        pointer-events: none;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    &:before {
+        content: '';
+        right: 6px; 
+        top:0px;
+        width: 40px; 
+        height: 40px;
+        position: absolute;
+        pointer-events: none;
+        display: block;
+    }
+    select {
+        padding: 15px 12px;
+        background: #fff;
+        border: none;
+        outline: none;
+        display: inline-block;
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        border: 1px solid $grey4;
+        margin: 10px 0 15px;
+    }
+    select:-moz-focusring { 
+        color: transparent;
+        text-shadow: 0 0 0 #000; 
+    }
+
+}

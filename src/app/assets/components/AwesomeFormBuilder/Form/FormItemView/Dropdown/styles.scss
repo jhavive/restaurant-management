@@ -1,0 +1,44 @@
+.dropdown-container{
+    position: relative;
+    display: block;
+    background-color: transparent;
+    width: auto;
+    float: left;
+    width: 80%;
+    border-radius: 5px;
+    .label{
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    cursor: pointer;
+    select {
+        font-weight: 200;
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 24px 8px 10px;
+        border: 1px solid #c4c4c4;
+        height: 50px;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        // margin-top: -2px;
+        right: 8px;
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #aaa;
+        transform: translateY(-50%);
+    }
+}

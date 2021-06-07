@@ -1,0 +1,16 @@
+@import '../../../../../scss/global.scss';
+
+.tile-container{
+    display: flex;
+    background: #282828;
+    font-size: 10px;
+    padding: 5px;
+    width: 60px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    p{
+        margin-left: 5px;
+    }
+}

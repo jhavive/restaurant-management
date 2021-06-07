@@ -1,0 +1,71 @@
+@import "../../scss/global.scss";
+
+.input-box {
+    position: relative;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 290px;
+    height: 49px;
+    margin: 30px auto 50px;
+
+    label{
+        position: absolute;
+        left: 0;
+        top: -22px;
+        font-size: 15px;
+        color: #212121;
+    }
+    span{
+        position: absolute;
+        left: 0px;
+        height: 100%;
+        width: 50px;
+        z-index:1;
+        top: 60%;
+        -ms-transform: translateY(-37%);
+        transform: translateY(-37%);
+        svg{
+        stroke-width: 1px;
+        }
+    }
+    .left-50{
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+    .left-0{
+        left: 0;
+        width: 100%;
+    }
+    .error{
+        
+    }
+    input {
+        position: absolute;
+        top: 0px;
+        height:100%;
+        border: none;
+        display: inline-block;
+        border-radius: 8px;
+        @include small_portrait {
+        display: inline-block;
+        width: 100%;
+        }
+    }
+}
+
+.input-box.error-input-box{
+    border-bottom: 2px solid red;
+    label{
+        color:red !important;
+    }
+    input{
+        color:red;
+        font-weight: bold;
+        &::placeholder{
+            font-size: 15px;
+            font-weight: bold;
+            color:red;
+        }
+    }
+}

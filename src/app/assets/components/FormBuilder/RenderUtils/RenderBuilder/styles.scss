@@ -1,0 +1,124 @@
+@import '../../../../../assets/scss/global.scss';
+
+// .form-builder-container{
+//     position: relative;
+//     width: 100%;
+    .dragable-container{
+        // position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        .form-preview-container{
+            height: 100%;
+            min-height: 200px;
+            padding:20px;
+            max-height: calc(100vh - 225px);
+            overflow-y: auto;
+            @include medium_landscape{
+                flex: 6;
+                margin: 35px 0px 0px;
+                padding:20px;
+            }
+            @include large_landscape{
+                flex: 9;
+                margin: 50px 0px 0px;
+                padding:20px;
+            }
+        }
+        .input-type-container{
+            // border: 1px solid $grey7;
+            // background-color: $grey4;
+            @include medium_landscape{
+                flex: 5;
+            }
+            @include large_landscape{
+                flex: 4;
+            }
+            
+            .grey{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: top;
+                background-color: $grey7;
+                padding: 10px 20px;
+                h5{
+                    width: 100%;
+                    font-weight: bolder;
+                    margin-bottom: 30px;
+                }
+                .input-selector{
+                    width: 48%;
+                    padding: 10px;
+                    text-align: center;
+                    // border: 1px dashed grey;
+                    font-size: 13px;
+                    color: $black;
+                    border: 1px solid $grey4;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+                span{
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+            .button-container{
+                padding: 10px;
+                // margin-top: 20px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                button{
+                    height: 40px;
+                    width: 48%;
+                    padding: 0px;
+                    text-transform: none;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .extra-info{
+            flex:4;
+            padding: 0px 15px 0px 0px;
+            @include medium_landscape{
+                padding: 10px;
+                flex:5;
+            }
+            @include large_landscape{
+                padding: 0px 15px 0px 15px;
+            }
+            h5{
+                color: #212121;
+                font-weight: bold;
+            }
+            label{
+                font-weight: bolder;
+                color: #212121;
+                input{
+                    margin-bottom: 20px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                text-transform: none;
+                font-size: 13px;
+                width: 60%;
+                padding: 17px 0px;
+                text-align: center;
+            }
+            // .inputBox input{
+            //     width: unset;
+            // }
+        }
+
+    }
+
+    
+// }
+

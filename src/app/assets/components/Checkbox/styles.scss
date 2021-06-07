@@ -1,0 +1,52 @@
+    /* This css is for normalizing styles. You can skip this. */
+@import '../../scss/global.scss';
+
+.checkbox-container{
+    input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 10px;
+        display: none;
+        cursor: pointer;
+    }
+    
+    label {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    label:before {
+        content:'';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 1px solid $grey1;
+        // padding: 10px;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 15px;
+        border-radius: 3px;
+    }
+
+    input:checked + label:before {
+        background-color: $prime-blue;
+        border: none;
+    }
+    
+    input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        width: 5px;
+        height: 11px;
+        border: 0.5px solid white;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+    }
+}

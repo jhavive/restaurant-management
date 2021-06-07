@@ -1,0 +1,18 @@
+@import '../../../../scss/global.scss';
+
+.td-container{
+  padding: 20px 10px;
+  background: white;
+  // border-bottom: 5px solid #FAFAFA;
+  // border-top: 5px solid #FAFAFA;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+  @include mobile{
+    max-width: 33vw;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

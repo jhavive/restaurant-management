@@ -1,0 +1,31 @@
+.horizontal-bar-graph-container{
+    .yAxis{
+        .domain{
+            opacity: 0;
+        }
+        .tick{
+            line{
+
+                opacity: 0.3;
+            }
+            text{
+                opacity: 0.6;
+            }
+        }
+        .tick:nth-last-child(1){
+            text{
+                opacity: 0;
+            }
+            line{
+                opacity: 1;
+            }
+        }
+    }
+    .xAxis{
+        .tick{
+            text{
+                transform: rotate(-90deg) translate(-10px, -10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../mixins/translation.scss';
+
+@keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}
+
+@keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slideUpEntry {
+  0% {
+    @include translateY(0%);
+  }
+
+  100% {
+    @include translateY(200%);
+  }
+}

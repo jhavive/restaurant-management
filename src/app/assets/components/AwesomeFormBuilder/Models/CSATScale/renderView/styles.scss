@@ -1,0 +1,25 @@
+@import '../../../../../scss/global.scss';
+
+.csat-scale-view{
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    input{
+        display: none;
+    }
+    .option-row{
+        cursor: pointer;
+        .cirlce{
+            width: 15px;
+            height: 15px;
+            border: 0.5px solid $grey1;
+            background: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .cirlce.active{
+            border: 0.5px solid $prime-blue;;
+            background: $prime-blue;
+        }
+    }
+}

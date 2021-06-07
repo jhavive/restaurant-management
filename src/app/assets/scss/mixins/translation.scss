@@ -1,0 +1,15 @@
+@mixin translateY($value) {
+  -webkit-transform: translate(0px, $value);
+     -moz-transform: translate(0px, $value);
+      -ms-transform: translate(0px, $value);
+       -o-transform: translate(0px, $value);
+          transform: translate(0px, $value);
+}
+
+@mixin translateX($value) {
+  -webkit-transform: translate($value, 0px);
+     -moz-transform: translate($value, 0px);
+      -ms-transform: translate($value, 0px);
+       -o-transform: translate($value, 0px);
+          transform: translate($value, 0px);
+}

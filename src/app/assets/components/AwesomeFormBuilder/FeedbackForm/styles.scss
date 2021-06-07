@@ -1,0 +1,78 @@
+@import '../../../scss/global.scss';
+
+.builder-feedback-form-container{
+
+    // display: flex;
+    // flex-direction: column;
+    .slide-container{
+        width: 600px;
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100vh - 395px);
+        overflow-y: auto;
+        @include mobile{
+            height: 58%;
+            overflow-y: auto;
+            width: 100%;
+            left: unset;
+            transform: unset;
+        }
+        input{
+            width: 100%;
+            @include small_portrait{
+                width: 90%;
+                margin: auto;
+            }
+        }
+        .input-container{
+            margin-bottom: 20px;
+            @include small_portrait{
+                margin: 5%;
+            }
+
+        }
+        .phone-input-container{
+            width: 100%;
+            .input-container{
+                @include small_portrait{
+                    margin: 0px 5%;
+                }
+                input{
+                    width: 100%;
+                }
+                
+            }
+            select{
+                @include small_portrait{
+                    left: 5%;
+                    width: 95px;
+                }
+            }
+        }
+        .dropdown-container{
+            width: 100%;
+            @include small_portrait{
+                margin: auto;
+                float: unset;
+                width: 90%;
+            }
+        }
+        .dropdown-container:after {
+            top: 65%;
+            right: 12px;
+        }
+        .custom-button{
+            width: 100%;
+            @include small_portrait{
+                width: 90%;
+                margin: 5%;
+            }
+        }
+    }
+    label{
+        text-align: left;
+    }
+    
+}

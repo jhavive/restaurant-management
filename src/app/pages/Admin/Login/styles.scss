@@ -1,0 +1,72 @@
+@import '../../../assets/scss/global.scss';
+
+.login-container{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 40px;
+    h2{
+        font-size: 30px;
+        margin: 0px;
+        color: #212121;
+        font-weight: normal;
+    }
+    p{
+        font-size: 15px;
+        margin: 0px;
+    }
+    .left-container{
+        flex: 4;
+        text-align: center;
+        margin: auto;
+        p{
+            font-size: 20px;
+            font-weight: 100;
+            color: $grey1;
+        }
+        input{
+            font-size: 15px;
+        }
+        
+    }
+    .vertical-line{
+        flex: 1;
+        div{
+            width: 1px;
+            height: 410px;
+            background-color: #D5D5D5;
+            margin: 0px auto;
+        }
+    }
+    .right-container{
+        flex: 4;
+        padding: 100px 20px;
+        // box-sizing: border-box;
+        text-align: center;
+        img{
+            width: 50%;
+            margin-bottom: 40px;
+        }
+        svg{
+            margin: 12px auto;
+        }
+        .blue{
+            display: inline;
+            color: $prime-blue;
+        }
+        .pre-signup{
+            color: $grey1;
+            margin-bottom: 15px;;
+        }
+        button{
+            border: 0.5px solid $grey1;
+            padding: 10px 20px;
+        }
+    }
+}
+
+

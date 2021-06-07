@@ -1,0 +1,13 @@
+export const SET_ROUTES = "SET_ROUTES"
+export const CUSTOM_FOOTER = "CUSTOM_FOOTER"
+export const REMOVE_CUSTOM_FOOTER = "REMOVE_CUSTOM_FOOTER"
+export const HIDE_FOOTER = "HIDE_FOOTER"
+export const SHOW_FOOTER = "SHOW_FOOTER"
+
+export const OPEN_MODAL = "OPEN_MODAL"
+export const CLOSE_MODAL = "CLOSE_MODAL"
+
+export const OPEN_LOADER = "OPEN_LOADER"
+export const CLOSE_LOADER = "CLOSE_LOADER"
+
+export const CHANGE_ROUTE = "CHANGE_ROUTE"

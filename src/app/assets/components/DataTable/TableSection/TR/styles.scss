@@ -1,0 +1,20 @@
+@import '../../../../scss/global.scss';
+
+.tr-container{
+  // padding: 20px;
+  // background: white;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 6px 1px rgba(74,74,74,0.08);
+}
+.accordian{
+  display: none;
+}
+
+.accordian-open + .accordian{
+  // animation:  slideDownEntry 5s linear;
+  display: table-row;
+}
+.accordian-closed + .accordian{
+  display: none;
+  // animation: slideUpExit 5s linear;
+} 

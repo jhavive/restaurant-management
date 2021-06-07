@@ -1,0 +1,28 @@
+export const deepCopyFunction = inObject => {
+    let outObject, value, key
+  
+    if(typeof inObject !== "object" || inObject === null) {
+        return inObject // Return the value if inObject is not an object
+    }
+  
+    // Create an array or object to hold the values
+    outObject = Array.isArray(inObject) ? [] : {}
+  
+    for (key in inObject) {
+        value = inObject[key]
+    
+        // Recursively (deep) copy for nested objects, including arrays
+        console.log(value)
+        // outObject[key] = (typeof value === "object" && value !== null) ? deepCopyFunction(value) : value
+    }
+    
+    return outObject
+}
+
+export const deepEqual = (x, y) => {
+    const ok = Object.keys, tx = typeof x, ty = typeof y;
+    return x && y && tx === 'object' && tx === ty ? (
+        ok(x).length === ok(y).length &&
+        ok(x).every(key => deepEqual(x[key], y[key]))
+    ) : (x === y);
+}

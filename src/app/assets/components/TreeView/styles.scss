@@ -1,0 +1,68 @@
+
+#form-tree, .tree-container-parent{
+    .hide-icon{
+        display: none;
+    }
+    .show-icon{
+        display: unset;
+    }
+    display: block;
+    .plus{
+        cursor: pointer;
+        margin: 10px 50px;
+    }
+    .child{
+        .hide-icon{
+            display: none;
+        }
+        .show-icon{
+            display: unset;
+        }
+        .trash{
+            display: unset;
+        }
+        .plus{
+            display: unset;
+        }
+        padding-left: 50px;
+        margin: 20px 5px;
+        cursor: pointer;
+    }
+    .tree-container{
+        display: flex;
+        align-items: center;
+        > * {
+            margin: 0px 10px;
+        }
+        
+    }
+    .child.hide-child{
+        .hide-icon{
+            display: unset;
+        }
+        .show-icon{
+            display: none;
+        }
+        .child{
+            display: none;
+        }
+        .trash{
+            display: none;
+        }
+        .plus{
+            display: none;
+        }
+    }
+}
+
+.tree-container-parent.hide-child{
+    .hide-icon{
+        display: unset;
+    }
+    .show-icon{
+        display: none;
+    }
+    .child{
+        display: none;
+    }
+}

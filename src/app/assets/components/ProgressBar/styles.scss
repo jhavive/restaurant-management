@@ -1,0 +1,18 @@
+.progress-bar-container{
+    text-align: left;
+    h2{
+        color: #212121;
+    }
+    .progress-bar-component{
+        width: 100%;
+        height: 8px;
+        border-radius:30px;
+        background-color: #ececec;
+        padding:0px;
+        .progress{
+            height: 8px;
+            border-radius:30px;
+            background-color: #1749a5;
+        }
+    }
+}

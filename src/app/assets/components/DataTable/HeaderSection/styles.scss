@@ -1,0 +1,15 @@
+.table-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;;
+    padding: 10px 5px;
+    .right{
+        svg{
+            margin: 15px;
+            stroke-width: 1px solid #212121;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+
+}

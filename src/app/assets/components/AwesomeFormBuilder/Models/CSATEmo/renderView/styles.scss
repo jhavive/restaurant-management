@@ -1,0 +1,85 @@
+@import '../../../../../scss/global.scss';
+
+.render-view-container{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    @include small_portrait{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    h5{
+        font-size: 24px;
+        color: #212121;
+        margin-bottom: 20px;
+    }
+    input{
+        visibility: hidden;
+    }
+    .params-row-header{
+        display: flex;
+        justify-content: space-between;
+        @include small_portrait{
+            display: none;
+        }
+        .rating{
+            text-align: center;
+            width: 18%;
+            p{
+                line-height: 13px;
+                font-size: 12px;
+                color: $grey1;
+            }
+        }
+        .param{
+            width: 100px;
+            word-wrap: break-word;
+            font-size: 18px;
+            color: black;
+            margin: 30px 60px 0px 0px;
+        }
+    }
+    .params-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:50px;
+        align-items: top;
+        @include small_portrait{
+            flex-flow: row wrap;
+            align-content: space-between;
+            margin-bottom:20px;
+        }
+        
+        .rating{
+            cursor: pointer;
+            text-align: center;
+            width: 18%;
+            p{
+                display: none;
+                line-height: 13px;
+                font-size: 12px;
+                @include small_portrait{
+                    display: block;
+                }
+            }
+        }
+        .param{
+            width: 100px;
+            word-wrap: break-word;
+            font-size: 18px;
+            color: black;
+            margin: 30px 60px 0px 0px;
+            @include small_portrait{
+                width: 100%;
+                font-weight: bold;
+                margin:30px 0px 10px;
+                font-size: 15px;
+                color: black;
+            }
+        }
+        .rating.active{
+            cursor: unset;
+            // border: 1px solid $prime-blue
+        }
+    }
+}
